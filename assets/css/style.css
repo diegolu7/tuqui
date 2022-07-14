@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+.navbar-brand {
+  padding: 0.5em;
+  font-size: 3rem;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  font-family: 'Righteous', cursive;
+}
+.nav-item a:hover{
+  color: rgb(255, 0, 0);
+}
+main{
+  background-image: url("https://cdn.pixabay.com/photo/2021/10/19/10/56/cat-6723256_960_720.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.welcome{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(4, 0, 0, 0.479);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);  
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  padding: 2em;
+  width: 100%;
+  height: 40em;
+}
+.welcome h2{
+}
+.welcome p{
+  margin: 2em;
+}
+.carrito{
+  color:rgb(255, 0, 0);
+}
+.footer-logo{
+  font-family: 'Righteous', cursive;
+  color:rgb(255, 0, 0);
+}
+.tienda-title{
+  text-align: center;
+  padding: 2em;
+}
+.card{
+  margin: 2em;
+}
