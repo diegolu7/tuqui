@@ -6,9 +6,8 @@ window.addEventListener('DOMContentLoaded', init());
 
 function init(){
   guardar_localStorage(data,"alimentos");
-  const alimentosLS = obtener_localStorage("alimentos");
-  cargarTienda(alimentosLS);
-  cargarTienda
-  //console.log(alimentosLS);
+  cargarTienda();
+  //AGREGAR A CARRITO
+
 }
 

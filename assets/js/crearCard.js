@@ -27,7 +27,7 @@ export default function crearCard($imgsrc,$titulo,$desc,$precio,$id){
   pDesc.textContent = $desc;
 
   pPrecio.classList.add("card-text");
-  pPrecio.textContent = $precio;
+  pPrecio.textContent = $precio+" $";
 
   btn.classList.add("btn");
   btn.classList.add("btn-primary");

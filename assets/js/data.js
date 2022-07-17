@@ -2,21 +2,21 @@ export let data = [
   {
     id: 0,
     nombre: "WHISKAS",
-    descripcion:"Alimento para gatos Whiskas 85 g. pollo",
+    descripcion:"Alimento para gato adulto Whiskas 85 g. pollo.",
     img:"https://carrefourar.vtexassets.com/arquivos/ids/161303-800-auto?v=637467656764300000&width=800&height=auto&aspect=true",
     precio: 112
   },
   {
     id: 1,
     nombre: "TIERNITOS",
-    descripcion:"Alimento para perros Tiernitos 1,5 kg. adultos carne",
+    descripcion:"Alimento para perros Tiernitos 1,5 kg. adultos carne.",
     img:"https://carrefourar.vtexassets.com/arquivos/ids/161223-800-auto?v=637467656053300000&width=800&height=auto&aspect=true",
     precio: 257
   },
   {
     id: 2,
     nombre: "CAT CHOW",
-    descripcion:"Alimento para gatos Cat Chow 85 g. pollo",
+    descripcion:"Alimento para gatos Cat Chow 85 g. pollo adultos.",
     img:"https://carrefourar.vtexassets.com/arquivos/ids/162000-800-auto?v=637467659935630000&width=800&height=auto&aspect=true",
     precio: 147
   },
@@ -37,7 +37,7 @@ export let data = [
   {
     id: 5,
     nombre: "GATI",
-    descripcion:"Alimento gatos Gati salmón y pollo 3 kg",
+    descripcion:"Alimento gatos Gati salmón y pollo 3 kg sabores casero",
     img:"https://carrefourar.vtexassets.com/arquivos/ids/241105-800-auto?v=637855512459700000&width=800&height=auto&aspect=true",
     precio: 927
   },
