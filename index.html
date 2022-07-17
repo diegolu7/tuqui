@@ -29,8 +29,29 @@
               <li class="nav-item mx-4">
                 <a class="nav-link" href="#">ADOPCION</a>
               </li>
-              <li class="nav-item mx-4">
+              <li class="nav-item mx-4 submenu">
                 <a class="nav-link carrito" href="#">CARRITO(0)</a>
+                <div id="carrito1">
+                  <table id="lista-carrito" class="u-full-width table">
+                    <thead>
+                        <tr>
+                          <th scope="col">Imagen</th>
+                          <th scope="col"> Nombre</th>
+                          <th scope="col"> Precio</th>
+                          <th scope="col"> Cantidad</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- <tr>
+                          <th scope="row">img</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr> -->
+                    </tbody>
+                  </table>
+                  <a href="#" id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</a>
+                </div>
               </li>
             </ul>
           </div>
@@ -55,7 +76,7 @@
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="WHISKAS">
         </form>
       </div>
-      <div class="cards container" id="tienda">
+      <div class="cards container" id="lista-tienda">
         <!-- <div class="row justify-content-around">
           <div class="card col-sm" style="width: 18rem;">
             <img src="https://carrefourar.vtexassets.com/arquivos/ids/161293-1200-auto?v=637467656640600000&width=1200&height=auto&aspect=true" class="card-img-top" alt="...">

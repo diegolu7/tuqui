@@ -59,4 +59,34 @@ main{
   -webkit-box-shadow: 5px 5px 15px -1px rgba(66, 65, 65, 0.171); 
   box-shadow: 5px 5px 15px -1px rgba(66, 65, 65, 0.233);
 }
+.carrito1{
+}
 
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito1{
+    display: none;
+
+    /**/
+        display: block;
+    position: absolute;
+    right: 0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+}
+.submenu:hover #carrito1{
+    /* display: block;
+    position: absolute;
+    right: 0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px; */
+  
+}

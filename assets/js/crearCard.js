@@ -31,15 +31,18 @@ export default function crearCard($imgsrc,$titulo,$desc,$precio,$id){
 
   btn.classList.add("btn");
   btn.classList.add("btn-primary");
-  
+  btn.classList.add("agregar-carrito");
   btn.setAttribute("button", "button" );
-  btn.textContent = "Agregar al carrito ";
+  btn.textContent = "Agregar al carrito 🛒";
   btn.setAttribute("id",$id);
+  btn.setAttribute("value",$id);
 
-  i.classList.add("fa-solid");
-  i.classList.add("fa-cart-shopping");
 
-  btn.appendChild(i);
+  // i.classList.add("fa-solid");
+  // i.classList.add("fa-cart-shopping");
+  // i.setAttribute("value",$id);
+
+  // btn.appendChild(i);
 
   divBody.appendChild(h5);
   divBody.appendChild(pDesc);
