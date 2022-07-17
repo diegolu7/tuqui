@@ -56,7 +56,7 @@ export let data = [
     precio: 157
   },
   {
-    id: 7,
+    id: 8,
     nombre: "PEDIGREE",
     descripcion:"Alimento para perros Pedigree 15 kg. adultos carne, pollo y cereales",
     img:"https://carrefourar.vtexassets.com/arquivos/ids/161293-800-auto?v=637467656640600000&width=800&height=auto&aspect=true",
