@@ -70,17 +70,7 @@ main{
     display: none;
 
     /**/
-        display: block;
-    position: absolute;
-    right: 0;
-
-    top:100%;
-    z-index: 1;
-    background-color: white;
-    padding: 20px;
-}
-.submenu:hover #carrito1{
-    /* display: block;
+        /* display: block;
     position: absolute;
     right: 0;
 
@@ -88,5 +78,19 @@ main{
     z-index: 1;
     background-color: white;
     padding: 20px; */
+}
+.submenu:hover #carrito1{
+    display: block;
+    position: absolute;
+    right: 0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
   
+}
+
+#vaciar-carrito:hover{
+  color: #fff;
 }
