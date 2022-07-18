@@ -20,5 +20,9 @@ function init(){
     e.preventDefault();
     vaciarCarrito(e);
   });
-  //finalizar compra
+  //BTN finalizar compra
+
+  //FILTRADO
+
+  
 }
