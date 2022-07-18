@@ -11,14 +11,18 @@ Img.classList.add('card-img-top');
 Img.src = $img;
 Img.alt= $producto+"-IMG";
 
+tbody.setAttribute("id", "lista-"+$id);
+
 
 th.appendChild(Img);
 td1.textContent=$producto;
 td2.textContent=$precio+"$";
-td2.setAttribute("class", "precio-"+$id );
-td3.textContent=$cantidad;
-td3.setAttribute("class", "precio-"+$id );
+td2.setAttribute("id", "precio-"+$id);
+td2.classList.add("precio-"+$id);
 
+td3.textContent=$cantidad;
+td3.setAttribute("id", "cantidad-"+$id);
+td3.classList.add("cantidad-"+$id);
 
 th.setAttribute("scope", "row" );
 tr.appendChild(th);
