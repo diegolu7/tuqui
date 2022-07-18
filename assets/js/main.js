@@ -4,6 +4,7 @@ import cargarTienda from "./cargarTienda.js";
 import agregarProducto from "./agregarProducto.js";
 import vaciarCarrito from "./vaciarCarrito.js";
 import buscador from "./buscador.js";
+import vacio from "./vacio.js";
 
 document.addEventListener('DOMContentLoaded', init());
 function init(){
@@ -19,12 +20,23 @@ function init(){
   //VACIAR CARRITO
   UIvaciarCarrito.addEventListener('click', (e)=>{
     e.preventDefault();
+    vacio();
     vaciarCarrito(e);
   });
   //BTN finalizar compra
-
+  const btnFinal = document.querySelector("#finalizar-carrito");
+  btnFinal.addEventListener('click', (e)=> {
+    e.preventDefault();
+    let arrayCarrito = obtener_localStorage('cantidades');
+    let res = arrayCarrito.find(element => element >= 1);
+    if(res){
+      alert("Gracias por su compra! 🐕");
+      window.location.reload(true);
+    }else{
+      alert("Tu carrito esta vacio! 🐕");
+    }
+  })
   //FILTRADO
   const filtro = document.querySelector("#filter-cards");
   filtro.addEventListener('keyup',(e)=> buscador(e));
-  
 }
