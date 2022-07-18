@@ -23,6 +23,6 @@ function init(){
   //BTN finalizar compra
 
   //FILTRADO
-
+  
   
 }

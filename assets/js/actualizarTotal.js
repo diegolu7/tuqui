@@ -22,7 +22,7 @@ export default function actualizaTotal(){
 
 
 
-
+  
 
   total.textContent ="Total: "+precio+"$";
 }

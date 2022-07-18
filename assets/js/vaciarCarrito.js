@@ -1,3 +1,4 @@
+import actualizaTotal from "./actualizarTotal.js";
 import crearTabla from "./crearTabla.js";
 import { guardar_localStorage, limpiar_localStorage, obtener_localStorage } from "./localStorage.js";
 export default function vaciarCarrito(e){
@@ -21,4 +22,7 @@ for (let index = 0; index < cantidades.length; index++) {
   
   let stockList= new Array(alimentosLS.length).fill(0);
   guardar_localStorage(stockList,"cantidades");
+  actualizaTotal();
+  const carritoui = document.querySelector("#navbarSupportedContent > ul > li.nav-item.mx-4.submenu > a");
+  carritoui.textContent="CARRITO(0)";
 }
