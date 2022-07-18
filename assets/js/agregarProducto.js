@@ -24,9 +24,8 @@ export default function agregarProducto(e){
 
     UIprecio.textContent=cantidades[$id] * alimentosLS[$id].precio;
     }
-
-  actualizaTotal();
   guardar_localStorage(cantidades,"cantidades");
+  actualizaTotal();
   }
   const numeroProductos = sumarCompra(cantidades);
   actualizarCarrito(numeroProductos);
