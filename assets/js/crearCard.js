@@ -36,6 +36,7 @@ export default function crearCard($imgsrc,$titulo,$desc,$precio,$id){
   btn.textContent = "Agregar al carrito 🛒";
   btn.setAttribute("id",$id);
   btn.setAttribute("value",$id);
+  btn.classList.add("ov-btn-slide-left");/**/
 
 
   // i.classList.add("fa-solid");
