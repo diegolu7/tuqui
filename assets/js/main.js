@@ -3,6 +3,7 @@ import { guardar_localStorage, limpiar_localStorage, obtener_localStorage } from
 import cargarTienda from "./cargarTienda.js";
 import agregarProducto from "./agregarProducto.js";
 import vaciarCarrito from "./vaciarCarrito.js";
+import buscador from "./buscador.js";
 
 document.addEventListener('DOMContentLoaded', init());
 function init(){
@@ -23,6 +24,7 @@ function init(){
   //BTN finalizar compra
 
   //FILTRADO
-  
+  const filtro = document.querySelector("#filter-cards");
+  filtro.addEventListener('keyup',(e)=> buscador(e));
   
 }

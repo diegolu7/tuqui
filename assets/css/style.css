@@ -10,7 +10,7 @@
   color: rgb(255, 0, 0);
 }
 .navbar{
-  /* position: sticky; */
+  position: fixed;
   z-index: 100;
   background-color: rgb(255, 255, 255);
   width: 100%;
@@ -93,4 +93,7 @@ main{
 
 #vaciar-carrito:hover{
   color: #fff;
+}
+.ocultar{
+  display: none;
 }
