@@ -10,7 +10,7 @@
   color: rgb(255, 0, 0);
 }
 .navbar{
-  position: fixed;
+  /* position: sticky; */
   z-index: 100;
   background-color: rgb(255, 255, 255);
   width: 100%;
@@ -59,8 +59,8 @@ main{
   -webkit-box-shadow: 5px 5px 15px -1px rgba(66, 65, 65, 0.171); 
   box-shadow: 5px 5px 15px -1px rgba(66, 65, 65, 0.233);
 }
-.carrito1{
-}
+/* .carrito1{
+} */
 
 .submenu {
     position: relative;
