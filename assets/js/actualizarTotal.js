@@ -9,7 +9,7 @@ export default function actualizaTotal(){
   for (let index = 0; index < cantidades.length; index++) {
     acu = parseInt(cantidades[index],10) * parseInt(alimentosLS[index].precio,10); 
     precio = precio + acu;
-    console.log(precio);
+    //console.log(precio);
   }
 
 
