@@ -1,291 +1,310 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tuqüi | los mejores productos para tu mascota!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href="./assets/css/normalize.css" rel="stylesheet">
-    <link href="./assets/css/style.css" rel="stylesheet">
-    <link rel="icon" type="image/ico" href="./assets/img/img.ico"/>
-    <script src="https://kit.fontawesome.com/3be41dd00c.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header class="">
-      <nav class="navbar mx-auto  navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Tuqüi.<i class="fa-solid fa-paw"></i></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-4">
-                <a class="nav-link" href="#">INICIO</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link" href="#scroll-tienda">TIENDA</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link" href="#scroll-adopcion">ADOPCION</a>
-              </li>
-              <li class="nav-item mx-4 submenu">
-                <a class="nav-link carrito" href="#">CARRITO(0)</a>
-                <div id="carrito1">
-                  <table id="lista-carrito" class="u-full-width table">
-                      <thead>
-                        <tr>
-                          <th scope="col">Imagen</th>
-                          <th scope="col"> Nombre</th>
-                          <th scope="col"> Precio($)</th>
-                          <th scope="col"> Cantidad</th>
-                        </tr>
-                      </thead>
-                  </table>
-                <div>
-                    <a href="#" id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</a>
-                  <a href="#" id="finalizar-carrito" class="btn btn-success">Comprar!</a>
-                  <span class="px-1 total" id="total">Total: 0$</span>
-                </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-                      <!-- <tbody>
-                        <tr>
-                          <th scope="row">img</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                      </tbody> -->
-      </nav>
-    </header>
-    <main class="cont ainer">
-      <div class="welcome container-fluid">
-        <h2>Tu tienda de mascotas!</h2>
-        <p>La alimentación desempeña un papel importante en la salud de los perros en crecimiento y produce efectos directos sobre el sistema inmunológico, la composición corporal, la velocidad de crecimiento y el desarrollo esquelético.</p>
-        <!-- <button type="button" class="btn btn-primary">VISITAR TIENDA</button> -->
-        <a href="#scroll-tienda" class="btn btn-primary ov-btn-slide-top">Conocer tienda!</a>
-      </div>
-    </main>
-    <!-- TIENDA -->
-    <section class="container" id="scroll-tienda">
-      <h2 class="h2">Alimento para mascotas:</h2>
-      <div class="container width=50%">
-        <form>
-        <div class="form-group">
-          <label for="filter-cards">Buscar Alimento</label>
-          <input type="text" class="form-control" id="filter-cards" aria-describedby="emailHelp" placeholder="WHISKAS...🔎">
-        </form>
-      </div>
-      <div class="cards container" id="lista-tienda">
-        <!-- <div class="row justify-content-around">
-          <div class="card col-sm" style="width: 18rem;">
-            <img src="https://carrefourar.vtexassets.com/arquivos/ids/161293-1200-auto?v=637467656640600000&width=1200&height=auto&aspect=true" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pedriguee - Adulto</h5>
-              <p class="card-text">Alimento para perros Pedigree 15 kg. adultos carne, pollo y cereales</p>
-              <p class="card-text">$ 3.133,00</p>
-              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Tuqüi | los mejores productos para tu mascota!</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <link href="./assets/css/normalize.css" rel="stylesheet">
+      <link href="./assets/css/style.css" rel="stylesheet">
+      <link rel="icon" type="image/ico" href="./assets/img/img.ico"/>
+      <script src="https://kit.fontawesome.com/3be41dd00c.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <header class="">
+         <nav class="navbar mx-auto  navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="index.html">Tuqüi.<i class="fa-solid fa-paw"></i></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item mx-4">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                     </li>
+                     <li class="nav-item mx-4">
+                        <a class="nav-link" href="#scroll-tienda">TIENDA</a>
+                     </li>
+                     <li class="nav-item mx-4">
+                        <a class="nav-link" href="#scroll-adopcion">ADOPCION</a>
+                     </li>
+                     <li class="nav-item mx-4 submenu">
+                        <a class="nav-link carrito" href="#">CARRITO(0)</a>
+                        <div id="carrito1">
+                           <table id="lista-carrito" class="u-full-width table">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col"> Nombre</th>
+                                    <th scope="col"> Precio($)</th>
+                                    <th scope="col"> Cantidad</th>
+                                 </tr>
+                              </thead>
+                           </table>
+                           <div>
+                              <a href="#" id="vaciar-carrito" class="btn btn-danger">Vaciar Carrito</a>
+                              <a href="#" id="finalizar-carrito" class="btn btn-success">Comprar!</a>
+                              <span class="px-1 total" id="total">Total: 0$</span>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
             </div>
-          </div>
-          <div class="card col-sm" style="width: 18rem;">
-            <img src="https://carrefourar.vtexassets.com/arquivos/ids/161293-1200-auto?v=637467656640600000&width=1200&height=auto&aspect=true" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pedriguee - Adulto</h5>
-              <p class="card-text">Alimento para perros Pedigree 15 kg. adultos carne, pollo y cereales</p>
-              <p class="card-text">$ 3.133,00</p>
-              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+            <!-- <tbody>
+               <tr>
+                 <th scope="row">img</th>
+                 <td>Mark</td>
+                 <td>Otto</td>
+                 <td>@mdo</td>
+               </tr>
+               </tbody> -->
+         </nav>
+      </header>
+      <main class="cont ainer">
+         <div class="welcome container-fluid">
+            <h2>Tu tienda de mascotas!</h2>
+            <p>La alimentación desempeña un papel importante en la salud de los perros en crecimiento y produce efectos directos sobre el sistema inmunológico, la composición corporal, la velocidad de crecimiento y el desarrollo esquelético.</p>
+            <!-- <button type="button" class="btn btn-primary">VISITAR TIENDA</button> -->
+            <a href="#scroll-tienda" class="btn btn-primary ov-btn-slide-top">Conocer tienda!</a>
+         </div>
+      </main>
+      <!-- TIENDA -->
+      <section class="container" id="scroll-tienda">
+         <h2 class="h2">Alimento para mascotas:</h2>
+         <div class="container width=50%">
+         <form>
+            <div class="form-group filtrador">
+               <label for="filter-cards">Buscar Alimento</label>
+               <input type="text" class="form-control" id="filter-cards" aria-describedby="emailHelp" placeholder="WHISKAS...🔎">
+         </form>
+         </div>
+         <div class="cards container" id="lista-tienda">
+            <!-- <div class="row justify-content-around">
+               <div class="card col-sm" style="width: 18rem;">
+                 <img src="https://carrefourar.vtexassets.com/arquivos/ids/161293-1200-auto?v=637467656640600000&width=1200&height=auto&aspect=true" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Pedriguee - Adulto</h5>
+                   <p class="card-text">Alimento para perros Pedigree 15 kg. adultos carne, pollo y cereales</p>
+                   <p class="card-text">$ 3.133,00</p>
+                   <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                 </div>
+               </div>
+               <div class="card col-sm" style="width: 18rem;">
+                 <img src="https://carrefourar.vtexassets.com/arquivos/ids/161293-1200-auto?v=637467656640600000&width=1200&height=auto&aspect=true" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Pedriguee - Adulto</h5>
+                   <p class="card-text">Alimento para perros Pedigree 15 kg. adultos carne, pollo y cereales</p>
+                   <p class="card-text">$ 3.133,00</p>
+                   <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                 </div>
+               </div>
+               <div class="card col-sm" style="width: 18rem;">
+                 <img src="https://carrefourar.vtexassets.com/arquivos/ids/161293-1200-auto?v=637467656640600000&width=1200&height=auto&aspect=true" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <h5 class="card-title">Pedriguee - Adulto</h5>
+                   <p class="card-text">Alimento para perros Pedigree 15 kg. adultos carne, pollo y cereales</p>
+                   <p class="card-text">$ 3.133,00</p>
+                   <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                 </div>
+               </div>
+               </div> -->
+         </div>
+      </section>
+      <!-- ADOPCION -->
+      <section class="" id="scroll-adopcion">
+         <div class="container">
+            <h2 class="h2">En adopción</h2>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <img src="https://elrefugio.org/contenido/animales/thumbsFicha/El-Refugio-Wurryweb.jpg" class="d-block w-100" alt="...">
+                     <div class="carousel-caption d-none d-md-block">
+                        <h5>Coco</h5>
+                        <p>Macho.</p>
+                        <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="">Adoptar ❤️</a>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <img src="https://elrefugio.org/contenido/animales/thumbsFicha/El-Refugio-Wendalweb.jpg" class="d-block w-100" alt="...">
+                     <div class="carousel-caption d-none d-md-block">
+                       <h5>Pepe</h5>
+                       <p>Macho.</p>
+                       <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="">Adoptar ❤️</a>
+                     </div>
+                     </div>
+                     <div class="carousel-item">
+                     <img src="https://elrefugio.org/contenido/animales/thumbsFicha/El-Refugio-Zambezeweb.jpg" class="d-block w-100" alt="...">
+                     <div class="carousel-caption d-none d-md-block">
+                       <h5>Percy</h5>
+                       <p>Macho.</p>
+                       <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="">Adoptar ❤️</a>
+                     </div>
+                     </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+               </button>
             </div>
-          </div>
-          <div class="card col-sm" style="width: 18rem;">
-            <img src="https://carrefourar.vtexassets.com/arquivos/ids/161293-1200-auto?v=637467656640600000&width=1200&height=auto&aspect=true" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Pedriguee - Adulto</h5>
-              <p class="card-text">Alimento para perros Pedigree 15 kg. adultos carne, pollo y cereales</p>
-              <p class="card-text">$ 3.133,00</p>
-              <a href="#" class="btn btn-primary">Agregar al carrito</a>
+         </div>
+      </section>
+      <footer class="text-center text-lg-start bg-light text-muted cont ainer">
+         <!-- Section: Social media -->
+         <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+            >
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+               <span>Visitanos en nuestras redes sociales:</span>
             </div>
-          </div>
-        </div> -->
-      </div>
-    </section>
-    <!-- Footer -->
-
-    <!-- ADOPCION -->
-<section class="" id="scroll-adopcion">
-<div class="container">
-  <h2 class="h2">En adopción</h2>
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://elrefugio.org/contenido/animales/thumbsFicha/El-Refugio-Wurryweb.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Coco</h5>
-        <p>Macho.</p>
-        <button type="button" class="btn btn-success">Adoptar ❤️</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://elrefugio.org/contenido/animales/thumbsFicha/El-Refugio-Wendalweb.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Pepe</h5>
-        <p>Macho.</p>
-        <button type="button" class="btn btn-success">Adoptar ❤️</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="https://elrefugio.org/contenido/animales/thumbsFicha/El-Refugio-Zambezeweb.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Percy</h5>
-        <p>Macho.</p>
-        <button type="button" class="btn btn-success">Adoptar ❤️</button>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
-</section>
-<footer class="text-center text-lg-start bg-light text-muted cont ainer">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Visitanos en nuestras redes sociales:</span>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-      <a href="www.facebook.com" class="me-3 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="www.twitter.com" class="me-3 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <!-- <a href="www.google.com" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a> -->
-      <a href="www.instagram.com" class="me-3 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <!-- <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
-      </a> -->
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4 footer-logo">
-            <i class="fa-solid fa-paw me-3"></i>Tuqüi.
-          </h6>
-          <p>
-            Somos es una empresa argentina, Desde hace más de 100 años, ofrece productos elaborados bajo los mas estrictos estándares de calidad internacional.
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Productos
-          </h6>
-          <p>
-            <a href="https://www.whiskas.com.ar/" class="text-reset">WHISKAS</a>
-          </p>
-          <p>
-            <a href="https://listado.mercadolibre.com.ar/animales-mascotas/perros/alimento/tiernitos/" class="text-reset">TIERNITOS</a>
-          </p>
-          <p>
-            <a href="https://www.purina-latam.com/ar/catchow?gclid=CjwKCAjw_b6WBhAQEiwAp4HyIPL36uL63gFkjTkV9MKDIRgyXZ9qF1qDWrlB_kGFhZSa-CBm7kqCRxoCBxAQAvD_BwE" class="text-reset">CAT CHOW</a>
-          </p>
-          <p>
-            <a href="https://www.purina-latam.com/ar/catchow?gclid=CjwKCAjw_b6WBhAQEiwAp4HyIPL36uL63gFkjTkV9MKDIRgyXZ9qF1qDWrlB_kGFhZSa-CBm7kqCRxoCBxAQAvD_BwE" class="text-reset">DOG SELECTION</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Enlaces útiles
-          </h6>
-          <p>
-            <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" class="text-reset">Blog</a>
-          </p>
-          <p>
-            <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" class="text-reset">Alimentación</a>
-          </p>
-          <p>
-            <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" class="text-reset">Adiestramiento</a>
-          </p>
-          <p>
-            <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" class="text-reset">Ayuda</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Contactanos
-          </h6>
-          <p><i class="fas fa-home me-3"></i> Balcarce 1848, Salta</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            alimento@tuqui.ar
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 54 9387 56 00</p>
-          <p><i class="fas fa-print me-3"></i> + 54 9387 19 77</p>
-        </div>
-        <!-- Grid column -->
-      </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
-
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2022 Copyright:
-    <a class="text-reset fw-bold" href="https://diego-dev.netlify.app/">diego.dev</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js" type="module"></script>
-  </body>
+            <!-- Left -->
+            <!-- Right -->
+            <div>
+               <a href="www.facebook.com" class="me-3 text-reset">
+               <i class="fab fa-facebook-f"></i>
+               </a>
+               <a href="www.twitter.com" class="me-3 text-reset">
+               <i class="fab fa-twitter"></i>
+               </a>
+               <!-- <a href="www.google.com" class="me-4 text-reset">
+                  <i class="fab fa-google"></i>
+                  </a> -->
+               <a href="www.instagram.com" class="me-3 text-reset">
+               <i class="fab fa-instagram"></i>
+               </a>
+               <!-- <a href="" class="me-4 text-reset">
+                  <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="" class="me-4 text-reset">
+                  <i class="fab fa-github"></i>
+                  </a> -->
+            </div>
+            <!-- Right -->
+         </section>
+         <!-- Section: Social media -->
+         <!-- Section: Links  -->
+         <section class="">
+            <div class="container text-center text-md-start mt-5">
+               <!-- Grid row -->
+               <div class="row mt-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                     <!-- Content -->
+                     <h6 class="text-uppercase fw-bold mb-4 footer-logo">
+                        <i class="fa-solid fa-paw me-3"></i>Tuqüi.
+                     </h6>
+                     <p>
+                        Somos es una empresa argentina, Desde hace más de 100 años, ofrece productos elaborados bajo los mas estrictos estándares de calidad internacional.
+                     </p>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                     <!-- Links -->
+                     <h6 class="text-uppercase fw-bold mb-4">
+                        Productos
+                     </h6>
+                     <p>
+                        <a href="https://www.whiskas.com.ar/" class="text-reset">WHISKAS</a>
+                     </p>
+                     <p>
+                        <a href="https://listado.mercadolibre.com.ar/animales-mascotas/perros/alimento/tiernitos/" class="text-reset">TIERNITOS</a>
+                     </p>
+                     <p>
+                        <a href="https://www.purina-latam.com/ar/catchow?gclid=CjwKCAjw_b6WBhAQEiwAp4HyIPL36uL63gFkjTkV9MKDIRgyXZ9qF1qDWrlB_kGFhZSa-CBm7kqCRxoCBxAQAvD_BwE" class="text-reset">CAT CHOW</a>
+                     </p>
+                     <p>
+                        <a href="https://www.purina-latam.com/ar/catchow?gclid=CjwKCAjw_b6WBhAQEiwAp4HyIPL36uL63gFkjTkV9MKDIRgyXZ9qF1qDWrlB_kGFhZSa-CBm7kqCRxoCBxAQAvD_BwE" class="text-reset">DOG SELECTION</a>
+                     </p>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                     <!-- Links -->
+                     <h6 class="text-uppercase fw-bold mb-4">
+                        Enlaces útiles
+                     </h6>
+                     <p>
+                        <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" class="text-reset">Blog</a>
+                     </p>
+                     <p>
+                        <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" class="text-reset">Alimentación</a>
+                     </p>
+                     <p>
+                        <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" class="text-reset">Adiestramiento</a>
+                     </p>
+                     <p>
+                        <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" class="text-reset">Ayuda</a>
+                     </p>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                     <!-- Links -->
+                     <h6 class="text-uppercase fw-bold mb-4">
+                        Contactanos
+                     </h6>
+                     <p><i class="fas fa-home me-3"></i> Balcarce 1848, Salta</p>
+                     <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        alimento@tuqui.ar
+                     </p>
+                     <p><i class="fas fa-phone me-3"></i> + 54 9387 56 00</p>
+                     <p><i class="fas fa-print me-3"></i> + 54 9387 19 77</p>
+                  </div>
+                  <!-- Grid column -->
+               </div>
+               <!-- Grid row -->
+            </div>
+         </section>
+         <!-- Section: Links  -->
+         <!-- Copyright -->
+         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright:
+            <a class="text-reset fw-bold" href="https://diego-dev.netlify.app/">diego.dev</a>
+         </div>
+         <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+      <!-- MODAL -->
+                              <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body">
+                                    <form>
+                                       <div class="mb-3">
+                                          <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                          <input type="text" class="form-control" id="recipient-name">
+                                       </div>
+                                       <div class="mb-3">
+                                          <label for="message-text" class="col-form-label">Mensaje:</label>
+                                          <textarea class="form-control" id="message-text"></textarea>
+                                       </div>
+                                    </form>
+                                 </div>
+                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary enviar" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary cancelar">Enviar Solicitud</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <script src="assets/js/main.js" type="module"></script>
+   </body>
 </html>

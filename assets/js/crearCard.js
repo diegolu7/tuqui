@@ -9,8 +9,10 @@ export default function crearCard($imgsrc,$titulo,$desc,$precio,$id){
   const i = document.createElement('i');
 
   divCard.classList.add("card");
-  divCard.classList.add("col-sm");
-  divCard.style.width = '18rem'; //VERIFICAR
+  divCard.classList.add("col-sm-3");
+  // divCard.classList.add("col");
+  // divCard.classList.add("col-sm");
+  //divCard.style.width = '18rem'; //VERIFICAR
   divCard.setAttribute("id", $id );
   
   divImg.classList.add('card-img-top');

@@ -7,14 +7,15 @@ export default function cargarTienda (){
   let fragment = document.createDocumentFragment();
   let unaRow = crearRow();
   let i = 0;
+      unaRow = crearRow();
+
   alimentosLS.forEach(element => {
     i++;
     let unaCard = crearCard(element.img, element.nombre, element.descripcion, element.precio, element.id);
     unaRow.appendChild(unaCard);
-    if (i % 3 === 0){ //set cantidad por fila
+    //if (i % 3 === 0){ //set cantidad por fila
       fragment.appendChild(unaRow);
-      unaRow = crearRow();
-    }
+    //}
   });
 tiendaUI.appendChild(fragment);
 }

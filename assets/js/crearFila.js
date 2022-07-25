@@ -13,7 +13,6 @@ Img.alt= $producto+"-IMG";
 
 tbody.setAttribute("id", "lista-"+$id);
 
-
 th.appendChild(Img);
 td1.textContent=$producto;
 td2.textContent=$precio+"$";

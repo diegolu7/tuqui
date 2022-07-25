@@ -9,7 +9,7 @@ export let data = [
   {
     id: 1,
     nombre: "TIERNITOS",
-    descripcion:"Alimento para perros Tiernitos 1,5 kg. adultos carne.",
+    descripcion:"Alimento para perros Tiernitos 1,5 kg. adultos.",
     img:"https://carrefourar.vtexassets.com/arquivos/ids/161223-800-auto?v=637467656053300000&width=800&height=auto&aspect=true",
     precio: 257
   },
@@ -23,14 +23,14 @@ export let data = [
   {
     id: 3,
     nombre: "DOG CHOW",
-    descripcion:"Alimento perros Dog chow adulto mediano & grande s/conservantes 15 kg.",
+    descripcion:"Alimento perros Dog chow adulto grande 15 kg.",
     img:"https://carrefourar.vtexassets.com/arquivos/ids/246281-800-auto?v=637901385082430000&width=800&height=auto&aspect=true",
     precio: 5066
   },
   {
     id: 4,
     nombre: "DOG SELECTION",
-    descripcion:"Alimento para perros Dog Selection 15 kg. adultos carne y pollo",
+    descripcion:"Alimento para perros Dog Selection 15 kg. adultos",
     img:"https://carrefourar.vtexassets.com/arquivos/ids/161686-800-auto?v=637467658847800000&width=800&height=auto&aspect=true",
     precio: 3905
   },
@@ -44,7 +44,7 @@ export let data = [
   {
     id: 6,
     nombre: "KINGFOOD",
-    descripcion:"Alimento para perros Kingfood 10 kg. adultos carne",
+    descripcion:"Alimento para perros Kingfood 10 kg. adultos",
     img:"https://carrefourar.vtexassets.com/arquivos/ids/161500-800-auto?v=637467657943930000&width=800&height=auto&aspect=true",
     precio: 1390
   },
@@ -58,7 +58,7 @@ export let data = [
   {
     id: 8,
     nombre: "PEDIGREE",
-    descripcion:"Alimento para perros Pedigree 15 kg. adultos carne, pollo y cereales",
+    descripcion:"Alimento para perros Pedigree 15 kg adultos.",
     img:"https://carrefourar.vtexassets.com/arquivos/ids/161293-800-auto?v=637467656640600000&width=800&height=auto&aspect=true",
     precio: 3133
   }
