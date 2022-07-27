@@ -30,6 +30,25 @@ main{
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+
+  animation-duration: 10s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+@keyframes slidein {
+  0% {
+      background-image: url("https://cdn.pixabay.com/photo/2021/10/19/10/56/cat-6723256_960_720.jpg");
+  }
+  10% {
+      background-image: url("https://cdn.pixabay.com/photo/2021/10/19/10/56/cat-6723256_960_720.jpg");
+  }
+  40% {
+    background-image: url("https://img.freepik.com/foto-gratis/retrato-grupo-adorables-cachorros_53876-64778.jpg?t=st=1658839163~exp=1658839763~hmac=540fc6e4d3fb2be46d3359ac61eb47bd0435f444b9704cfe54ca8817e23c69b3&w=826");
+  }
+  100% {
+    /* background-image: url("/assets/img/img.jpeg"); */
+    background-image: url("https://img.freepik.com/foto-gratis/retrato-grupo-adorables-cachorros_53876-64778.jpg?t=st=1658839163~exp=1658839763~hmac=540fc6e4d3fb2be46d3359ac61eb47bd0435f444b9704cfe54ca8817e23c69b3&w=826");
+  }
 }
 .welcome{
   align-items: center;

@@ -5,6 +5,7 @@ import agregarProducto from "./agregarProducto.js";
 import vaciarCarrito from "./vaciarCarrito.js";
 import buscador from "./buscador.js";
 import vacio from "./vacio.js";
+import adoptar from "./adoptar.js";
 
 document.addEventListener('DOMContentLoaded', init());
 function init(){
@@ -30,10 +31,23 @@ function init(){
     let arrayCarrito = obtener_localStorage('cantidades');
     let res = arrayCarrito.find(element => element >= 1);
     if(res){
-      alert("Gracias por su compra! 🐕");
-      window.location.reload(true);
+      //alert("Gracias por su compra! 🐕");
+      Swal.fire(
+        'Gracias por su compra!',
+        'Vuelva pronto',
+        'success'
+      );
+      setTimeout(function(){
+        window.location.reload(true);
+      }, 2000);
     }else{
-      alert("Tu carrito esta vacio! 🐕");
+      //alert("Tu carrito esta vacio! 🐕");
+      Swal.fire({
+      icon: 'error',
+      title: 'El carrito esta vacio',
+      text: '',
+      footer: '<p>Debe cargar al menos un producto en el carrito.<p>'
+      });
     }
   })
   //FILTRADO
@@ -55,5 +69,8 @@ exampleModal.addEventListener('show.bs.modal', event => {
 
   modalTitle.textContent = `Crear solicitud de adpoción ${recipient}`
   modalBodyInput.value = recipient
-})
+});
+//adopcion 
+const aceptar = document.querySelector("#exampleModal > div > div > div.modal-footer > button.btn.btn-primary.cancelar");
+aceptar.addEventListener('click', (e)=>{adoptar(e)});
 }
